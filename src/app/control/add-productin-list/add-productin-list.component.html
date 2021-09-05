@@ -1,0 +1,31 @@
+<div class="login-wrapper" fxLayout="row" fxLayoutAlign="center center">
+
+    <mat-card class="box">
+        <mat-card-header>
+            <mat-card-title>ADD PRODUCTS</mat-card-title>
+        </mat-card-header>
+<form  [formGroup]="form">
+    <mat-card-content>
+        <mat-form-field class="example-full-width">
+        <input type="text" placeholder="name" class="form-control" formControlName="name">
+        </mat-form-field>
+    </mat-card-content>
+    <mat-card-content>
+        <mat-form-field class="example-full-width">
+        <input type="text" placeholder="category" class="form-control" formControlName="category">
+     </mat-form-field>
+     </mat-card-content>
+     <mat-card-content>
+        <mat-form-field class="example-full-width">
+        <input type="number" placeholder="price" class="form-control" formControlName="price">
+    </mat-form-field>
+    </mat-card-content>
+    <mat-card-content>
+        <mat-form-field class="example-full-width">
+        <input type="number" placeholder="quantity" class="form-control" formControlName="quantity">
+    </mat-form-field>
+    </mat-card-content>
+    <button mat-stroked-button color="accent" (click)="addToList()" class="btn-block">Add</button>
+</form>
+</mat-card>
+</div>

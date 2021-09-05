@@ -1,0 +1,17 @@
+
+<mat-card>
+    <mat-card-content>
+        <mat-list>
+            <mat-list-item *ngFor="let product of listProd">
+                <h4 matLine> Name: {{product.name}}</h4><br>
+                <h4 matLine> Category: {{product.category}}</h4><br>
+                <h4 matLine> Price: {{product.price}}</h4><br>
+                <h4 matLine> Quantity: {{product.quantity}}</h4><br>
+                <button mat-fab color="danger" (click)="deleteProduct(product)"><mat-icon>delete</mat-icon>
+                </button>
+                <mat-divider></mat-divider>
+            </mat-list-item>
+        </mat-list>
+        
+    </mat-card-content>
+</mat-card>

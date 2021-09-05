@@ -1,0 +1,14 @@
+<app-requestsseller *ngIf="!sellerslist"></app-requestsseller>
+<button matSubheader (click)="show_sellers()">{{contentSeller}}</button>
+<mat-list *ngIf="sellerslist">
+
+    <mat-list-item *ngFor="let seller of sellers">
+        <mat-icon matListIcon> person_outline </mat-icon>
+        <button matLine-item routerLink="#">visit seller</button><br>
+        <button matLine-item routerLink="#">remove seller</button>
+        <h4 matLine> Name: {{seller.name}}</h4><br>
+        <p matLine class="demo-2"> Place: {{seller.product}} </p>
+
+        <mat-divider></mat-divider>
+    </mat-list-item>
+</mat-list>

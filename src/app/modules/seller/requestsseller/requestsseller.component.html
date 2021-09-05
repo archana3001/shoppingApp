@@ -1,0 +1,13 @@
+<p>Requests</p>
+
+<mat-list>
+    <mat-list-item *ngFor="let rseller of Rsellers">
+        <mat-icon matListIcon> person_outline </mat-icon>
+        <button matLine-item routerLink="#">accept seller</button><br>
+        <button matLine-item routerLink="#">remove seller</button>
+        <h4 matLine> Name: {{rseller.name}}</h4><br>
+        <p matLine class="demo-2"> Product: {{rseller.product}} </p>
+
+        <mat-divider></mat-divider>
+    </mat-list-item>
+</mat-list>

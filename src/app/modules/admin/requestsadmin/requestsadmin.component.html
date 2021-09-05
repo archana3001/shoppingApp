@@ -1,0 +1,13 @@
+<p>Requests</p>
+<mat-list>
+    <h3 matSubheader>Admin</h3>
+    <mat-list-item *ngFor="let admin of Radmins">
+        <mat-icon matListIcon> person_outline </mat-icon>
+        <button matLine-item routerLink="#">remove </button>
+        <button matLine-item routerLink="#">accept </button>
+        <h4 matLine> Name: {{admin.name}}</h4><br>
+        <p matLine class="demo-2"> Type: {{admin.type}} </p>
+
+        <mat-divider></mat-divider>
+    </mat-list-item>
+</mat-list>
