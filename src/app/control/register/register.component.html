@@ -38,7 +38,7 @@
                     <input matInput placeholder="Role" class="form-control" formControlName="admintype" >
                 </mat-form-field>
             </mat-card-content>
-            <mat-card-content *ngIf="signupForm.controls['admintype'].invalid && (signupForm.controls['admintype'].dirty || signupForm.controls['admintype'].touched || signupForm.controls['admintype'].required)" class="error">
+            <mat-card-content *ngIf="signupForm.controls['admintype'].invalid && (signupForm.controls['admintype'].dirty || signupForm.controls['admintype'].touched)" class="error">
                 Please Enter role as per given choices
             </mat-card-content>
             <mat-card-content>
