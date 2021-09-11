@@ -12,7 +12,7 @@ import { PostsComponent } from './modules/posts/posts.component';
 import { AuthGuard } from './shared/auth.guard';
 
 const routes: Routes = [
-  {path: '', component: LoginComponent},
+  {path: '', component: ControlComponent},
   {
     path: 'login',
     component: ControlComponent
