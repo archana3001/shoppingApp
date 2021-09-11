@@ -1,13 +1,10 @@
-<div class="container">
-    <div class="row" >
-        <div class="col-sm">
+<div class="login-wrapper" fxLayout="row" fxLayoutAlign="center center">
+    <mat-card class="box">
+        <mat-card-content>
             <app-login></app-login>
-        </div>
-        <div class="col-sm">
-            
-        </div>
-        <div class="col-sm">
-            <app-register></app-register>
-        </div>
-    </div>
+        </mat-card-content>
+            <mat-card-content>
+                    <a mat-stroked-button color="accent" class="btn-block" routerLink="signup">Signup</a>
+            </mat-card-content>
+    </mat-card>
 </div>
