@@ -10,13 +10,20 @@
                 <mat-form-field class="example-full-width">
                     <input matInput placeholder="Email" class="form-control" formControlName="email">
                 </mat-form-field>
-
+            </mat-card-content>
+                <mat-card-content *ngIf="signinForm.controls['email'].invalid && (signinForm.controls['email'].dirty || signinForm.controls['email'].touched)" class="error">
+                    Please enter password
+                </mat-card-content>
+                <mat-card-content>
                 <mat-form-field class="example-full-width">
                     <input matInput placeholder="Password" class="form-control" formControlName="password">
                 </mat-form-field>
             </mat-card-content>
-            <button mat-stroked-button color="accent" class="btn-block">Log in</button>
+            <mat-card-content *ngIf="signinForm.controls['password'].invalid && (signinForm.controls['password'].dirty || signinForm.controls['password'].touched)" class="error">
+                Please enter password
+            </mat-card-content>
+            <button mat-stroked-button color="accent" class="btn-block" [disabled]="signinForm.invalid">Log in</button>
         </form>
+        
     </mat-card>
-
 </div>
