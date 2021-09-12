@@ -13,10 +13,7 @@ import { AuthGuard } from './shared/auth.guard';
 
 const routes: Routes = [
   {path: '', component: ControlComponent},
-  {
-    path: 'login',
-    component: ControlComponent
-  },
+
   {path: 'signup', component: RegisterComponent},
  {
   path: 'profile/:id',
