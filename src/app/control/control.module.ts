@@ -12,6 +12,7 @@ import { MatCommonModule } from '@angular/material/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { AddProductinListComponent } from './add-productin-list/add-productin-list.component';
+import { AppRoutingModule } from '../app-routing.module';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { AddProductinListComponent } from './add-productin-list/add-productin-li
     MatCommonModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    AppRoutingModule
   ],
   exports: [
     LoginComponent,
