@@ -58,7 +58,7 @@ export class AuthService {
     localStorage.removeItem('id');
     let removeToken = localStorage.removeItem('access_token');
     if (removeToken == null) {
-      this.router.navigate(['login']);
+      this.router.navigate(['']);
     }
   }
 
