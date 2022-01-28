@@ -1,4 +1,4 @@
 require("dotenv").config();
 module.exports = {
-    db: process.env.DATABASE;
+    db: process.env.DATABASE
 }
