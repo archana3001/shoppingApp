@@ -4,6 +4,8 @@ const cors = require('cors');
 const api = require('./routes/auth.routes');
 const api1 = require('./routes/product.routes');
 const dbConfig=require('./database/db');
+var path = require('path');
+const { use } = require('./routes/auth.routes');
 
 // MongoDB conection
 mongoose.Promise = global.Promise;
@@ -34,6 +36,12 @@ app.use(cors());
 
 app.use('/api', api)
 app.use('/api1', api1)
+
+app.use(express.static(path.join(__dirname,'public')));
+app.get('*',(req,res)=>{
+    res.sendFile(path.join(__dirname,'public/index.html'))
+})
+
 
 // Define PORT
 const port = process.env.PORT || 4000;
